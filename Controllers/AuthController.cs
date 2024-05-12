@@ -1,6 +1,7 @@
 ﻿using ElearningAPI.DTOs;
 using ElearningAPI.Models;
 using ElearningAPI.Repositories;
+using ElearningAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,11 +11,11 @@ namespace ElearningAPI.Controllers
 	[ApiController]
 	public class AuthController : ControllerBase
 	{
-		private readonly IUserRepository _userRepository;
+		private readonly UserService _userService;
 
-		public AuthController(IUserRepository userRepository)
+		public AuthController(UserService userService)
 		{
-			_userRepository = userRepository;
+			_userService = userService;
 		}
 
 		[HttpPost("register")]
@@ -26,11 +27,11 @@ namespace ElearningAPI.Controllers
 				Email = register.Email,
 				Password = register.Password,
 			};
-			var response = await _userRepository.Create(userModel);
+			var res = await _userService.Create(userModel);
 
-			if (!response.Flag) { return BadRequest(response.Message); }
+			if (!res.Flag) { return BadRequest(res.Message); }
 
-			return Ok(response);
+			return Ok(res);
 		}
 		[HttpPost("login")]
 		public async Task<IActionResult> Login(LoginDTO loginDTO)
@@ -41,7 +42,7 @@ namespace ElearningAPI.Controllers
 				Password = loginDTO.Password,
 			};
 
-			var res = await _userRepository.Login(userModel);
+			var res = await _userService.Login(userModel);
 			if (!res.Flag) { return BadRequest(res.Message); }
 
 			return Ok(res);

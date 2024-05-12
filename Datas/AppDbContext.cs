@@ -8,5 +8,7 @@ namespace ElearningAPI.Datas
 		public AppDbContext(DbContextOptions options) : base(options)
 		{
 		}
+
+		public DbSet<Classroom> Classrooms { get; set; }
 	}
 }
