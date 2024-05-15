@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{8920BE8C-1989-4A15-9BE9-03F1BCB67CAE}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Datas/AppDbContext.cs" Line="1" Column="1" />
+      <File FileName="Controllers/AuthController.cs" />
+      <File FileName="Controllers/WeatherForecastController.cs" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="107" Column="5" />
+      <File FileName="WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="Responses/ServiceResponses.cs" />
+      <File FileName="Responses/UserSession.cs" />
+      <File FileName="Properties/launchSettings.json" Line="14" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ElearningAPI">
+            <Node name="ElearningAPI">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Datas" expanded="True" />
+              <Node name="DTOs" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ElearningAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

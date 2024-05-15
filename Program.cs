@@ -16,13 +16,17 @@ namespace ElearningAPI
 	{
 		public static void Main(string[] args)
 		{
-			var builder = WebApplication.CreateBuilder(args);
+
+            
+
+            var builder = WebApplication.CreateBuilder(args);
 			var config = builder.Configuration;
 			builder.Services.AddAuthorization();
 
-			// Add services to the container.
+            // Add services to the container.
+           
 
-			builder.Services.AddControllers();
+            builder.Services.AddControllers();
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 
@@ -104,8 +108,11 @@ namespace ElearningAPI
 				app.UseSwagger();
 				app.UseSwaggerUI();
 			}
-
-			app.UseAuthentication();
+			app.UseCors(builder =>
+			{
+				builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+			});
+            app.UseAuthentication();
 			app.UseAuthorization();
 
 			app.MapControllers();
