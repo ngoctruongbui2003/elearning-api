@@ -1,6 +1,7 @@
 using ElearningAPI.Datas;
 using ElearningAPI.Repositories;
 using ElearningAPI.Repositories.Impl;
+using ElearningAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -94,6 +95,7 @@ namespace ElearningAPI
 				};
 			});
 
+			builder.Services.AddScoped<UserService>();
 			builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 			// Add Http Context Accessor
