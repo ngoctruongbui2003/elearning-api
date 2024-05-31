@@ -1,6 +1,7 @@
 ﻿using ElearningAPI.Datas;
 using ElearningAPI.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using static ElearningAPI.Responses.ServiceResponses;
 
 namespace ElearningAPI.Repositories.Impl
@@ -9,13 +10,17 @@ namespace ElearningAPI.Repositories.Impl
 	{
 		private readonly UserManager<User> _userManager;
 		private readonly RoleManager<IdentityRole> _roleManager;
+
+		private readonly AppDbContext _appDbContext;
 		public UserRepository(
 			UserManager<User> userManager,
-			RoleManager<IdentityRole> roleManager
+			RoleManager<IdentityRole> roleManager,
+			AppDbContext appDbContext
 		)
 		{
 			_userManager = userManager;
 			_roleManager = roleManager;
+			_appDbContext = appDbContext;
 		}
 		public async Task<bool> Add(User entity, string password)
 		{
@@ -48,19 +53,24 @@ namespace ElearningAPI.Repositories.Impl
 			throw new NotImplementedException();
 		}
 
-		public Task<IEnumerable<User>> GetAll()
+		public async Task<IEnumerable<User>> GetAll()
 		{
-			throw new NotImplementedException();
+			return await _appDbContext.Users.ToListAsync();
 		}
 
-		public async Task<User> GetByEmail(string email)
+        public async Task<IEnumerable<User>> GetAllById(IEnumerable<string> userId)
+        {
+            return await _appDbContext.Users.Where(x => userId.Contains(x.Id)).ToListAsync();
+        }
+
+        public async Task<User> GetByEmail(string email)
 		{
 			return await _userManager.FindByEmailAsync(email);
 		}
 
-		public Task<User> GetById(int id)
+		public async Task<User> GetById(string id)
 		{
-			throw new NotImplementedException();
+			return await _appDbContext.Users.FindAsync(id);
 		}
 
 		public async Task<string> GetRoleByUser(User user)

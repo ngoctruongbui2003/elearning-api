@@ -10,8 +10,6 @@ namespace ElearningAPI.Models
 		public string? Name { get; set; } = null!;
 
 		public string? Description { get; set; } = null!;
-
-		public string? Type { get; set; } = null!;
 		public string? CreatedUser { get; set; } = null!;
 		public DateTime CreatedAt { get; set; }
 		public bool IsTurnOnCode { get; set; } = true;

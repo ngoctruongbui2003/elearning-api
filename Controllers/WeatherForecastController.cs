@@ -26,7 +26,7 @@ namespace ElearningAPI.Controllers
 		public ActionResult GetForecastByUser()
 		{
 
-			var userId = User.FindFirstValue(ClaimTypes.Email);
+			var userId = User.FindFirstValue(ClaimTypes.Name);
 
 			if (userId == null) return Ok("NGU");
 

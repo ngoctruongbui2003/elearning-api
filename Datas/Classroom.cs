@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using ElearningAPI.DTOs;
+using Microsoft.Extensions.Hosting;
 using System.ComponentModel.DataAnnotations;
 
 namespace ElearningAPI.Datas
@@ -18,5 +19,19 @@ namespace ElearningAPI.Datas
 		public DateTime CreatedAt { get; set; }
 		public bool IsTurnOnCode { get; set; } = true;
 		public bool IsDeleted { get; set; } = false;
+
+
+		// 1-n
+		public ICollection<ClassroomCreate> ClassroomCreates { get; set; } 
+
+		// 1-n
+		public ICollection<Post> Posts { get; set; }
+		
+		public Classroom(){}
+		public Classroom(ClassroomDTO classroomDTO){
+			Code = classroomDTO.Code;
+			Name = classroomDTO.Name;
+			Description = classroomDTO.Description;
+		}
 	}
 }

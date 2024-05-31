@@ -4,7 +4,7 @@ namespace ElearningAPI.Repositories
 {
 	public interface IUserRepository
 	{
-		Task<User> GetById(int id);
+		Task<User> GetById(string id);
 		Task<User> GetByEmail(string email);
 		Task<IEnumerable<User>> GetAll();
 		Task<string> GetRoleByUser(User user);
@@ -15,5 +15,9 @@ namespace ElearningAPI.Repositories
 		Task Delete(User entity);
 		Task<bool> IsRoleExists(string roleName);
 		Task<bool> CheckPassword(User user, string password);
+
+		Task<IEnumerable<User>> GetAllById(IEnumerable<string> userId);
+
+		
 	}
 }

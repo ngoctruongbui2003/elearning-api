@@ -9,6 +9,12 @@ namespace ElearningAPI.Datas
 		{
 		}
 
-		public DbSet<Classroom> Classrooms { get; set; }
+		public DbSet<Classroom>? Classrooms { get; set; }
+
+		public DbSet<ClassroomCreate>? ClassroomCreates{get; set;}
+
+		public DbSet<Post>? Posts{ get; set; }
+
+		public DbSet<Comment>? Comments { get; set; }
 	}
 }

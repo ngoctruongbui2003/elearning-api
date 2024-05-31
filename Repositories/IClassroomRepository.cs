@@ -9,6 +9,13 @@ namespace ElearningAPI.Repositories
 		Task<IEnumerable<Classroom>> GetAllByUser();
 		Task<bool> Add(Classroom entity);
 		Task Update(Classroom entity);
-		Task Delete(Classroom entity);
+		Task<bool> Delete(int id);
+		
+		Task<Classroom> GetByCode(String code);
+
+		Task<bool> Exit(int id);
+
+	
+		
 	}
 }

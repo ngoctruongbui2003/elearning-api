@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/Users/nguyenan/Desktop/ElearningFake/elearning-api/ElearningAPI.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "/Users/nguyenan/Desktop/ElearningFake/elearning-api/ElearningAPI.csproj",
         "packagesPath": "/Users/nguyenan/.nuget/packages/",
         "outputPath": "/Users/nguyenan/Desktop/ElearningFake/elearning-api/obj/",
+=======
+    "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj": {}
+  },
+  "projects": {
+    "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
+        "projectName": "ElearningAPI",
+        "projectPath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
+        "packagesPath": "/Users/nguyenan/.nuget/packages/",
+        "outputPath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/obj/",
+>>>>>>> 85eb5e8 (code post + comment)
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nguyenan/.nuget/NuGet/NuGet.Config"
@@ -32,12 +46,25 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.29, )"
@@ -96,7 +123,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.408/RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+>>>>>>> 85eb5e8 (code post + comment)
         }
       }
     }

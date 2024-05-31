@@ -1,7 +1,9 @@
 using ElearningAPI.Datas;
+using ElearningAPI.Helper;
 using ElearningAPI.Repositories;
 using ElearningAPI.Repositories.Impl;
 using ElearningAPI.Services;
+using ElearningAPI.Services.Impl;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -95,9 +97,23 @@ namespace ElearningAPI
 				};
 			});
 
-			builder.Services.AddScoped<UserService>();
+			// Repository
 			builder.Services.AddScoped<IUserRepository, UserRepository>();
+			builder.Services.AddScoped<IClassroomRepository,ClassroomRepository>();
+			builder.Services.AddScoped<IPostRepository,PostRepository>();
+			builder.Services.AddScoped<IClassroomCreateRepository,ClassroomCreateRepository>();
+			builder.Services.AddScoped<ICommentRepository,CommentRepository>();
 
+			// Service
+			builder.Services.AddScoped<UserService>();
+			builder.Services.AddScoped<ICommentService,CommentService>();
+			builder.Services.AddScoped<IClassroomService, ClassroomService>();
+			builder.Services.AddScoped<IPostService,PostService>();
+
+
+
+			// Add AutoMapper
+			builder.Services.AddAutoMapper(typeof(MappingProfile));
 			// Add Http Context Accessor
 			builder.Services.AddHttpContextAccessor();
 
@@ -114,7 +130,11 @@ namespace ElearningAPI
 			{
 				builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
 			});
+<<<<<<< HEAD
             app.UseAuthentication();
+=======
+			app.UseAuthentication();
+>>>>>>> 85eb5e8 (code post + comment)
 			app.UseAuthorization();
 
 			app.MapControllers();
