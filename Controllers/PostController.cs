@@ -13,7 +13,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
 namespace ElearningAPI.Controllers
 {
-    [Route("api/Classroom/{classroomId}/[controller]")]
+    [Route("api/[controller]")]
     [Authorize(Roles = "User")]
     public class PostController : Controller
     {
@@ -30,12 +30,17 @@ namespace ElearningAPI.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
-        {
-            return Ok(await _postService.GetByIdPostAsync(id));
-        }
+        // [HttpGet("{id}")]
+        // public async Task<IActionResult> GetById(int id)
+        // {
+        //     return Ok(await _postService.GetByIdPostAsync(id));
+        // }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdClassroom(int id)
+        {
+            return Ok(await _postService.GetByIdClassroomAsync(id));
+        }
         // POST api/values
         [HttpPost]
         public async Task<IActionResult> AddPost(string description, int classroomId)
@@ -75,6 +80,8 @@ namespace ElearningAPI.Controllers
         {
             return Ok(await _postService.DeletePostAsync(id));
         }
+
+        
     }
 }
 

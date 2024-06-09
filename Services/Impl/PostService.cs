@@ -55,6 +55,12 @@ namespace ElearningAPI.Services
 			return _mapper.Map<IEnumerable<PostDTO>>(post);
         }
 
+        public async Task<IEnumerable<PostDTO>> GetByIdClassroomAsync(int id)
+        {
+			var post = await _postRepository.GetByIdClassroom(id);
+			return _mapper.Map<IEnumerable<PostDTO>>(post);
+        }
+
         public async Task<PostDTO> GetByIdPostAsync(int id)
         {
             var post = await _postRepository.GetById(id);

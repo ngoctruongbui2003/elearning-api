@@ -2,8 +2,6 @@
   "version": 3,
   "targets": {
     "net7.0": {
-<<<<<<< HEAD
-=======
       "AutoMapper/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -33,7 +31,6 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
->>>>>>> 85eb5e8 (code post + comment)
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -3698,11 +3695,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-<<<<<<< HEAD
-=======
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
->>>>>>> 85eb5e8 (code post + comment)
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.29",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.29",
@@ -3720,19 +3714,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "/Users/nguyenan/Desktop/ElearningFake/elearning-api/ElearningAPI.csproj",
+      "projectUniqueName": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
       "projectName": "ElearningAPI",
-      "projectPath": "/Users/nguyenan/Desktop/ElearningFake/elearning-api/ElearningAPI.csproj",
+      "projectPath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
       "packagesPath": "/Users/nguyenan/.nuget/packages/",
-      "outputPath": "/Users/nguyenan/Desktop/ElearningFake/elearning-api/obj/",
-=======
-      "projectUniqueName": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
-      "projectName": "ElearningAPI",
-      "projectPath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
-      "packagesPath": "/Users/nguyenan/.nuget/packages/",
-      "outputPath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/obj/",
->>>>>>> 85eb5e8 (code post + comment)
+      "outputPath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nguyenan/.nuget/NuGet/NuGet.Config"
@@ -3830,11 +3816,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.408/RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
->>>>>>> 85eb5e8 (code post + comment)
       }
     }
   }

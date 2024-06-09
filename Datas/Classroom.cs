@@ -26,6 +26,8 @@ namespace ElearningAPI.Datas
 
 		// 1-n
 		public ICollection<Post> Posts { get; set; }
+
+		public ICollection<UploadFile> Files { get ; set; }
 		
 		public Classroom(){}
 		public Classroom(ClassroomDTO classroomDTO){

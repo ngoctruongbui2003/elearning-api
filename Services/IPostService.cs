@@ -13,6 +13,8 @@ namespace ElearningAPI.Services
 		Task<IEnumerable<PostDTO>> GetAllPostAsync();
 
 		Task<PostDTO> GetByIdPostAsync(int id);
+		Task<IEnumerable<PostDTO>> GetByIdClassroomAsync(int id);
+
 
 
 	}

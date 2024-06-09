@@ -26,9 +26,11 @@
   <ItemGroup>
     <None Remove="Helper\" />
     <None Remove="Request\" />
+    <None Remove="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helper\" />
     <Folder Include="Request\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
 </Project>

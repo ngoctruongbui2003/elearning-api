@@ -10,8 +10,10 @@ namespace ElearningAPI.DTOs
 
 		public DateTime CreatedAt { get; set; }
 
+		public UserDTO User { get; set; }
+
 		
-        
+         public ICollection<CommentDTO> Comments { get; set; }
        
 	}
 }

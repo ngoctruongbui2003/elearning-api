@@ -4,7 +4,7 @@ namespace ElearningAPI.Services
 {
 	public interface IClassroomService
 	{
-		Task <bool> AddClassroomAsync(ClassroomDTO model);
+		Task <bool> AddClassroomAsync(ClassroomCreateDTO model);
         Task <ClassroomDTO> UpdateClassroomAsync(int id,ClassroomDTO model);
 
         Task<bool> DeleteClassroomAsync(int id);

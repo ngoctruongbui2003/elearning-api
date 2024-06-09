@@ -8,11 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "ElearningAPI/1.0.0": {
         "dependencies": {
-<<<<<<< HEAD
-=======
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
->>>>>>> 85eb5e8 (code post + comment)
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.29",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.29",
@@ -27,8 +24,6 @@
           "ElearningAPI.dll": {}
         }
       },
-<<<<<<< HEAD
-=======
       "AutoMapper/12.0.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0"
@@ -52,7 +47,6 @@
           }
         }
       },
->>>>>>> 85eb5e8 (code post + comment)
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -189,11 +183,7 @@
           "System.Text.Encodings.Web": "4.7.2"
         }
       },
-<<<<<<< HEAD
-      "Microsoft.CSharp/4.5.0": {},
-=======
       "Microsoft.CSharp/4.7.0": {},
->>>>>>> 85eb5e8 (code post + comment)
       "Microsoft.Data.SqlClient/2.1.7": {
         "dependencies": {
           "Microsoft.Data.SqlClient.SNI.runtime": "2.1.1",
@@ -492,11 +482,7 @@
       },
       "Microsoft.IdentityModel.Tokens/6.35.0": {
         "dependencies": {
-<<<<<<< HEAD
-          "Microsoft.CSharp": "4.5.0",
-=======
           "Microsoft.CSharp": "4.7.0",
->>>>>>> 85eb5e8 (code post + comment)
           "Microsoft.IdentityModel.Logging": "6.35.0",
           "System.Security.Cryptography.Cng": "4.5.0"
         },
@@ -796,8 +782,6 @@
       "serviceable": false,
       "sha512": ""
     },
-<<<<<<< HEAD
-=======
     "AutoMapper/12.0.1": {
       "type": "package",
       "serviceable": true,
@@ -812,7 +796,6 @@
       "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512"
     },
->>>>>>> 85eb5e8 (code post + comment)
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -946,21 +929,12 @@
       "path": "microsoft.aspnetcore.webutilities/2.2.0",
       "hashPath": "microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512"
     },
-<<<<<<< HEAD
-    "Microsoft.CSharp/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
-=======
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "path": "microsoft.csharp/4.7.0",
       "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
->>>>>>> 85eb5e8 (code post + comment)
     },
     "Microsoft.Data.SqlClient/2.1.7": {
       "type": "package",

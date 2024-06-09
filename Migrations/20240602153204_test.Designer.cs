@@ -4,6 +4,7 @@ using ElearningAPI.Datas;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElearningAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240602153204_test")]
+    partial class test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,38 +23,6 @@ namespace ElearningAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("ElearningAPI.Datas.Assignment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("ClassroomId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DueDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ClassroomId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Assignments");
-                });
 
             modelBuilder.Entity("ElearningAPI.Datas.Classroom", b =>
                 {
@@ -416,23 +386,6 @@ namespace ElearningAPI.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("ElearningAPI.Datas.Assignment", b =>
-                {
-                    b.HasOne("ElearningAPI.Datas.Classroom", "Classroom")
-                        .WithMany()
-                        .HasForeignKey("ClassroomId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ElearningAPI.Datas.User", "User")
-                        .WithMany("Assignments")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("Classroom");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("ElearningAPI.Datas.ClassroomCreate", b =>
                 {
                     b.HasOne("ElearningAPI.Datas.Classroom", "Classroom")
@@ -564,8 +517,6 @@ namespace ElearningAPI.Migrations
 
             modelBuilder.Entity("ElearningAPI.Datas.User", b =>
                 {
-                    b.Navigation("Assignments");
-
                     b.Navigation("ClassroomCreates");
 
                     b.Navigation("Comments");

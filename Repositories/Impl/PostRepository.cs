@@ -37,7 +37,12 @@ namespace ElearningAPI.Repositories.Impl
 
         public async Task<Post> GetById(int id)
         {
-            return await _context.Posts.FindAsync(id);
+            return await _context.Posts.Include(x =>x.Comments).SingleOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<IEnumerable<Post>> GetByIdClassroom(int id)
+        {
+            return await _context.Posts.Include(x=>x.Classroom).Include(x =>x.Comments).ThenInclude(r => r.User).Where(x => x.ClassroomId == id).ToListAsync();
         }
 
         public async Task Update(Post entity)
@@ -45,6 +50,7 @@ namespace ElearningAPI.Repositories.Impl
             _context.Entry(entity).State = EntityState.Modified;
             await _context.SaveChangesAsync();
         }
+        
     }
 }
 

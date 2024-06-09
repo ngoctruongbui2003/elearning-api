@@ -18,12 +18,16 @@ namespace ElearningAPI.Services
         private readonly IClassroomCreateRepository _classroomCreateRepository;
 
         private readonly IUserRepository _userRepository;
+
+        private readonly IPostRepository _postRepository;
+
 		public ClassroomService(
             IClassroomRepository classroomRepository,
             IMapper mapper,
             IHttpContextAccessor httpContextAccessor,
             IClassroomCreateRepository classroomCreateRepository,
-            IUserRepository userRepository
+            IUserRepository userRepository,
+            IPostRepository postRepository
             )
         {
                 _classroomRepository = classroomRepository;
@@ -31,13 +35,15 @@ namespace ElearningAPI.Services
                 _httpContextAccessor = httpContextAccessor;
                 _classroomCreateRepository = classroomCreateRepository;
                 _userRepository = userRepository;
+                _postRepository = postRepository;
 		}
-        public async Task<bool> AddClassroomAsync(ClassroomDTO model)
+        public async Task<bool> AddClassroomAsync(ClassroomCreateDTO model)
         {
             HttpContext httpContext = _httpContextAccessor.HttpContext;
 			var user = httpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var classroom = _mapper.Map<Classroom>(model);
+            classroom.Code = "1ID";
 			classroom.CreatedAt = DateTime.Now;
 			classroom.CreatedUser = user;
 			classroom.IsDeleted = false;
@@ -81,7 +87,8 @@ namespace ElearningAPI.Services
         public async Task<ClassroomDTO> GetClassroomByIdAsync(int id)
         {
             var classrooms = await _classroomRepository.GetById(id);
-
+            // IEnumerable<Post> listPost = classrooms.Posts; 
+            
             return _mapper.Map<ClassroomDTO>(classrooms);
         }
 

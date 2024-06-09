@@ -1,75 +1,29 @@
 ﻿<Properties StartupConfiguration="{8920BE8C-1989-4A15-9BE9-03F1BCB67CAE}|Default">
-<<<<<<< HEAD
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ElearningAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/UserModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AssignmentController.cs">
     <Files>
-      <File FileName="Models/UserModel.cs" Line="11" Column="1" />
-=======
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DTOs/PostDTO.cs">
-    <Files>
-      <File FileName="Program.cs" />
-      <File FileName="Services/IClassroomService.cs" />
-      <File FileName="Controllers/ClassroomController.cs" />
-      <File FileName="WeatherForecast.cs" />
-      <File FileName="Services/Impl/UserService.cs" />
-      <File FileName="Datas/Classroom.cs" />
-      <File FileName="Models/ClassroomModel.cs" Line="19" Column="1" />
-      <File FileName="Repositories/IClassroomRepository.cs" />
-      <File FileName="Repositories/Impl/ClassroomRepository.cs" />
-      <File FileName="Services/Impl/ClassroomService.cs" />
-      <File FileName="Datas/AppDbContext.cs" />
-      <File FileName="Repositories/Impl/UserRepository.cs" />
-      <File FileName="Datas/ClassroomCreate.cs" />
-      <File FileName="Controllers/AuthController.cs" />
-      <File FileName="Repositories/Impl/IClassroomCreateRepository.cs" Line="1" Column="1" />
-      <File FileName="Repositories/Impl/ClassroomCreateRepository.cs" Line="24" Column="2" />
-      <File FileName="DTOs/UserDTO.cs" Line="9" Column="1" />
-      <File FileName="Datas/Post.cs" Line="1" Column="1" />
-      <File FileName="DTOs/PostDTO.cs" Line="1" Column="1" />
->>>>>>> 85eb5e8 (code post + comment)
+      <File FileName="Datas/Classroom.cs" Line="30" Column="47" />
+      <File FileName="Repositories/Impl/FileRepository.cs" />
+      <File FileName="Services/IFileService.cs" />
+      <File FileName="Controllers/AssignmentController.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ElearningAPI">
             <Node name="ElearningAPI">
-<<<<<<< HEAD
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" selected="True" />
               <Node name="Datas" expanded="True" />
-              <Node name="DTOs" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Responses" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
-=======
-              <Node name="DTOs">
-                <Node name="PostDTO.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Impl" expanded="True" />
-              </Node>
->>>>>>> 85eb5e8 (code post + comment)
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-<<<<<<< HEAD
-=======
   <MonoDevelop.Ide.ItemProperties.ElearningAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
->>>>>>> 85eb5e8 (code post + comment)
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

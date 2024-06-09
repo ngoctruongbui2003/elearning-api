@@ -103,12 +103,14 @@ namespace ElearningAPI
 			builder.Services.AddScoped<IPostRepository,PostRepository>();
 			builder.Services.AddScoped<IClassroomCreateRepository,ClassroomCreateRepository>();
 			builder.Services.AddScoped<ICommentRepository,CommentRepository>();
+			builder.Services.AddScoped<IAssignmentRepository,AssignmentRepository>();
 
 			// Service
 			builder.Services.AddScoped<UserService>();
 			builder.Services.AddScoped<ICommentService,CommentService>();
 			builder.Services.AddScoped<IClassroomService, ClassroomService>();
 			builder.Services.AddScoped<IPostService,PostService>();
+			builder.Services.AddScoped<IAssignmentService,AssignmentService>();
 
 
 
@@ -130,11 +132,11 @@ namespace ElearningAPI
 			{
 				builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
 			});
-<<<<<<< HEAD
+			app.UseStaticFiles();
             app.UseAuthentication();
-=======
+
 			app.UseAuthentication();
->>>>>>> 85eb5e8 (code post + comment)
+
 			app.UseAuthorization();
 
 			app.MapControllers();

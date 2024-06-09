@@ -48,7 +48,7 @@ namespace ElearningAPI.Repositories.Impl
 
         public async Task<Classroom> GetById(int id)
         {
-            return await _context.Classrooms.FindAsync(id);
+            return await _context.Classrooms.Include(x=> x.Posts).SingleOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<Classroom> GetByCode(String code)

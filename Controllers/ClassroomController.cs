@@ -42,7 +42,7 @@ namespace ElearningAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]ClassroomDTO classroomDTO)
+        public async Task<IActionResult> Create([FromBody]ClassroomCreateDTO classroomDTO)
         {
             var result = await _classroomService.AddClassroomAsync(classroomDTO);
             if(result){

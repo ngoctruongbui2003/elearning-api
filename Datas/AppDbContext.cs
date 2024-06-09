@@ -16,5 +16,9 @@ namespace ElearningAPI.Datas
 		public DbSet<Post>? Posts{ get; set; }
 
 		public DbSet<Comment>? Comments { get; set; }
+
+		public DbSet<UploadFile>? Files{ get ; set ;}
+
+		public DbSet<Assignment>? Assignments { get; set; }
 	}
 }

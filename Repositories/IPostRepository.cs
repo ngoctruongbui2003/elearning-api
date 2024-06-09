@@ -6,6 +6,8 @@ namespace ElearningAPI.Repositories.Impl
 	{
 		Task<Post> GetById(int id);
 
+		Task<IEnumerable<Post>> GetByIdClassroom(int id);
+
 		Task<IEnumerable<Post>> GetAll();
 		Task<Post> Add(Post entity);
 

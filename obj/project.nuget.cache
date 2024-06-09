@@ -1,18 +1,11 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "u1jJwFS9zqVtJY1vwAEdQ7UH+RWJFFyUZCXRORVPDGN6AEz+XxdYe0wwmS960Z86j8Ap1RYYEB7Kfzy0ceV8kg==",
+  "dgSpecHash": "FsnAscEtDd7s4YMUDAksge2FOHQS7M+vpcjzviv58/CrMeR84E0QwszSqmqE9GdiJ7tMjymT0vx0kdDavEnCFQ==",
   "success": true,
-  "projectFilePath": "/Users/nguyenan/Desktop/ElearningFake/elearning-api/ElearningAPI.csproj",
-  "expectedPackageFiles": [
-=======
-  "dgSpecHash": "MCHXnSjhSiX2ztupK9PPpVtbq9UmhT7wcYGa4VqSIIouYXYJ+/ICeStRN5h+b3zIyc/ByfGbJemJVVKCn37JEQ==",
-  "success": true,
-  "projectFilePath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
+  "projectFilePath": "/Users/nguyenan/Desktop/Tư_Tưởng/elearning-api/ElearningAPI.csproj",
   "expectedPackageFiles": [
     "/Users/nguyenan/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/nguyenan/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
->>>>>>> 85eb5e8 (code post + comment)
     "/Users/nguyenan/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/nguyenan/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/Users/nguyenan/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -32,11 +25,7 @@
     "/Users/nguyenan/.nuget/packages/microsoft.aspnetcore.identity/2.2.0/microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "/Users/nguyenan/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/6.0.29/microsoft.aspnetcore.identity.entityframeworkcore.6.0.29.nupkg.sha512",
     "/Users/nguyenan/.nuget/packages/microsoft.aspnetcore.webutilities/2.2.0/microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
-<<<<<<< HEAD
-    "/Users/nguyenan/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
-=======
     "/Users/nguyenan/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
->>>>>>> 85eb5e8 (code post + comment)
     "/Users/nguyenan/.nuget/packages/microsoft.data.sqlclient/2.1.7/microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "/Users/nguyenan/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/nguyenan/.nuget/packages/microsoft.entityframeworkcore/6.0.29/microsoft.entityframeworkcore.6.0.29.nupkg.sha512",

@@ -9,10 +9,12 @@ namespace ElearningAPI.Helper
 		public MappingProfile()
 		{
 			CreateMap<Classroom,ClassroomDTO>().ReverseMap();
+			CreateMap<Classroom,ClassroomCreateDTO>().ReverseMap();
 			CreateMap<ClassroomCreate,ClassroomCreateDTO>().ReverseMap();
 			CreateMap<User,UserDTO>().ReverseMap();
 			CreateMap<Post,PostDTO>().ReverseMap();
 			CreateMap<Comment,CommentDTO>().ReverseMap();
+			CreateMap<Assignment,AssignmentDTO>().ReverseMap();
 		}
 	}
 }
